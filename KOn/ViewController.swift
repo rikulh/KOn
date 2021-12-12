@@ -19,6 +19,7 @@ class ViewController: UIViewController {
         }
     }
     let hit = SimpleSound(named: "hit")
+    let tih = SimpleSound(named: "tih")
     @IBOutlet weak var highLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
@@ -119,13 +120,14 @@ class ViewController: UIViewController {
                 hit.play()
                 score += 1
             } else if sender.image(for: .normal) == neko {
-                hit.play()
+                tih.play()
                 score -= 3
             }
             sender.setImage(down, for: .normal)
             scoreLabel.text = String(score)
             highScore = max(highScore,score)
             highLabel.text = "High: \(highScore)"
+            UserDefaults.standard.set(highScore, forKey: "highScore")
         }
     }
 }

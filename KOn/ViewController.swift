@@ -18,7 +18,7 @@ class ViewController: UIViewController {
             button.tag = index
         }
     }
-    
+    let hit = SimpleSound(named: "hit")
     @IBOutlet weak var highLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet var buttons: [UIButton]!
@@ -110,12 +110,16 @@ class ViewController: UIViewController {
         if isPlaying {
             btndsApearTimer[sender.tag]?.invalidate()
             if sender.image(for: .normal) == gold {
+                hit.play()
                 score += 5
             } else if sender.image(for: .normal) == silver {
+                hit.play()
                 score += 3
             } else if sender.image(for: .normal) == normal {
+                hit.play()
                 score += 1
-            } else {
+            } else if sender.image(for: .normal) == neko {
+                hit.play()
                 score -= 3
             }
             sender.setImage(down, for: .normal)

@@ -13,6 +13,8 @@
 		9A328FF1276579BF002A5642 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A328FEF276579BF002A5642 /* Main.storyboard */; };
 		9A328FF3276579C3002A5642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A328FF2276579C3002A5642 /* Assets.xcassets */; };
 		9A328FF6276579C3002A5642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A328FF4276579C3002A5642 /* LaunchScreen.storyboard */; };
+		9A328FFF2765CAA4002A5642 /* SimpleSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A328FFE2765CAA4002A5642 /* SimpleSound.swift */; };
+		9A3290012765CABF002A5642 /* hit.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9A3290002765CABF002A5642 /* hit.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9A328FF2276579C3002A5642 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A328FF5276579C3002A5642 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A328FF7276579C3002A5642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A328FFE2765CAA4002A5642 /* SimpleSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSound.swift; sourceTree = "<group>"; };
+		9A3290002765CABF002A5642 /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		9A328FE8276579BF002A5642 /* KOn */ = {
 			isa = PBXGroup;
 			children = (
+				9A3290002765CABF002A5642 /* hit.mp3 */,
+				9A328FFE2765CAA4002A5642 /* SimpleSound.swift */,
 				9A328FE9276579BF002A5642 /* AppDelegate.swift */,
 				9A328FEB276579BF002A5642 /* SceneDelegate.swift */,
 				9A328FED276579BF002A5642 /* ViewController.swift */,
@@ -127,6 +133,7 @@
 			files = (
 				9A328FF6276579C3002A5642 /* LaunchScreen.storyboard in Resources */,
 				9A328FF3276579C3002A5642 /* Assets.xcassets in Resources */,
+				9A3290012765CABF002A5642 /* hit.mp3 in Resources */,
 				9A328FF1276579BF002A5642 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +148,7 @@
 				9A328FEE276579BF002A5642 /* ViewController.swift in Sources */,
 				9A328FEA276579BF002A5642 /* AppDelegate.swift in Sources */,
 				9A328FEC276579BF002A5642 /* SceneDelegate.swift in Sources */,
+				9A328FFF2765CAA4002A5642 /* SimpleSound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
